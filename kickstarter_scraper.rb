@@ -13,7 +13,7 @@ def create_project_hash
 #description: project.css("p.bbcard_blurb").text
 # percent funded: project.css("ul.project-stats li.first.funded strong").text.gsub("%","").to_i
 
-
+projects = {} #<-here we create an empty hash as it will contain the scraped elements that will be stored in the projects hash/ variable
 
 
   binding.pry

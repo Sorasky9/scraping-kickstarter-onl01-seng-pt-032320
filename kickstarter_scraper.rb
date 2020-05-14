@@ -19,7 +19,7 @@ kickstarer.css("li.project.grid_4").each do |project|
   title = project.css("h2.bbcard_name strong a").text
 
   projects[title.to_sym] = {}
-  #^Up here we are using the projectS hash to call on the PROJECT elements from the iteration
+  #^Up here we are using the projects hash with the title elements being converted to symbols
 end
 
 projects #<- We have to call the projects hash from above to return the scraping elements

@@ -22,7 +22,7 @@ kickstarer.css("li.project.grid_4").each do |project|
   :description => project.css("p.bbcard_blurb").text, :location => project.css("ul.project-meta span.location-name").text,
 :percent_funded => roject.css("ul.project-stats li.first.funded strong").text.gsub("%","").to_i}
 # projects is a hash that has the title being converted here as a symbol. The keys in the hash are the title type of projects
-#such as images, descriptions, locations and percent_funded and the value is displayed here as a key using the specific html/css selectors
+#such as images, descriptions, locations and percent_funded and the value is displayed here as a key using the specific html/css selectors.
 end
 
 projects #<- We have to call the projects hash from above to return the scraping elements

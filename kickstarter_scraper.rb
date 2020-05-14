@@ -20,7 +20,7 @@ kickstarer.css("li.project.grid_4").each do |project|
   #^Up here we are using the projectS hash to call on the PROJECT elements from the iteration
 end
 
-
+projects
   binding.pry
   # write your code here
 end

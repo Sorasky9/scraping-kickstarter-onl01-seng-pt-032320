@@ -26,7 +26,7 @@ kickstarter.css("li.project.grid_4").each do |project|
 end
 
 projects #<- We have to call the projects hash from above to return the scraping elements
-  binding.pry
+  #binding.pry
   # write your code here
 end
 

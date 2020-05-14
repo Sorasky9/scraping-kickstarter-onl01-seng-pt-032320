@@ -21,7 +21,7 @@ kickstarer.css("li.project.grid_4").each do |project|
   projects[title.to_sym] = {:image_link => project.css("div.project-thumbnail a img").attribute("src").value,
   :description => project.css("p.bbcard_blurb").text, :location => project.css("ul.project-meta span.location-name").text,
 :percent_funded => roject.css("ul.project-stats li.first.funded strong").text.gsub("%","").to_i}
-# projects is a hash that has the title being converted here as 
+# projects is a hash that has the title being converted here as a symbol
 end
 
 projects #<- We have to call the projects hash from above to return the scraping elements

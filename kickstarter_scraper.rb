@@ -18,7 +18,7 @@ projects = {} #<-here we create an empty hash as it will contain the scraped ele
 kickstarer.css("li.project.grid_4").each do |project|
   title = project.css("h2.bbcard_name strong a").text
 
-  projects[project] = {}
+  projects[title.to_sym] = {}
   #^Up here we are using the projectS hash to call on the PROJECT elements from the iteration
 end
 

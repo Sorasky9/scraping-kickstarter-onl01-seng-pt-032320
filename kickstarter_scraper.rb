@@ -18,6 +18,7 @@ projects = {} #<-here we create an empty hash as it will contain the scraped ele
 kickstarer.css("li.project.grid_4").each do |project|
   projects[project] = {}
   #^Up here we are using the projectS hash to call on the PROJECT elements from the iteration
+end
 
 
   binding.pry
